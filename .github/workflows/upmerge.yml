@@ -8,18 +8,9 @@ on:
       - 'feature/*'
 
 jobs:
-  nightly-merge:
-
+  hello_world:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Up Merge
-      uses: bambamboole/gha-upmerge@master
-      with:
-        stable_branch: 'develop'
-        development_branch: 'feature/*'
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      - name: echo message
+        run: |
+          echo "echo hello"
