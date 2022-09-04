@@ -21,7 +21,7 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "/tesla-app",
+  "homepage": "https://javiersanchez5.github.io/tesla-app/",
   "scripts": {
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
