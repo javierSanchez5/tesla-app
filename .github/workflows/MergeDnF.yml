@@ -5,7 +5,7 @@ name: Merge branch Develop and Feature
 on:
   push:
     branches:
-      - "release/*"
+      - "feature/*"
 jobs:
   merge-branch:
     runs-on: ubuntu-latest
