@@ -23,7 +23,7 @@
   },
   "homepage": "https://javiersanchez5.github.io/tesla-app/",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
