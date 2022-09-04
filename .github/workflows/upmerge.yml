@@ -3,8 +3,9 @@
 name: 'Up merge'
 
 on:
-  push:
-    branches: [ feature/first ]
+  pull_request:
+    branches:
+      - 'feature/**'
 
 jobs:
   hello_world:
