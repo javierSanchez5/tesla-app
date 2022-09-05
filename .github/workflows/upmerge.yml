@@ -3,7 +3,7 @@
 on:
   push:
     branches:
-    - 'feature/*'
+    - 'main'
 
 jobs:
   pull-request:
@@ -11,7 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: pull-request
-      uses: repo-sync/pull-request@v2
-      with:
-        destination_branch: "develop"
-        github_token: ${{ secrets.ACCESS_TOKEN }}
+        echo "hello world"
