@@ -1,16 +1,17 @@
-# This is a basic workflow to help you get started with Actions
-
-name: 'Up merge'
+# File: .github/workflows/pull-request.yml
 
 on:
-  pull_request:
+  push:
     branches:
-      - 'feature/**'
+    - 'feature/*'
 
 jobs:
-  hello_world:
+  pull-request:
     runs-on: ubuntu-latest
     steps:
-      - name: echo message
-        run: |
-          echo "echo hello"
+    - uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "develop"
+        github_token: ${{ secrets.ACCESS_TOKEN }}
